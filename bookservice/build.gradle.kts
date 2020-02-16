@@ -9,7 +9,15 @@ plugins {
     id("org.springframework.boot")
     id("io.spring.dependency-management")
     kotlin("plugin.spring")
+    kotlin("plugin.jpa")
     kotlin("plugin.allopen")
+    kotlin("plugin.noarg")
+}
+
+allOpen {
+    annotation("javax.persistence.Entity")
+    annotation("javax.persistence.Embeddable")
+    annotation("javax.persistence.MappedSuperclass")
 }
 
 

@@ -1,7 +1,8 @@
 rootProject.name = "kotlin-dls-springboot-restfull"
 
 include(
-    "bookservice"
+    "bookservice",
+    "moviecatalogueservice"
 )
 
 pluginManagement {

@@ -1,6 +1,5 @@
-INSERT INTO BOOK(`IBAN`, `AUTHOR`, `TITLE`)
-VALUES ('0101UUA', 'J.O.Dorsz', 'One way'),
-        ('0201UUA', 'J.O.Dorsz', 'One way 2'),
-        ('0301UUA', 'J.O.Dorsz', 'One way 3'),
-        ('0401UUA', 'J.O.Dorsz', 'One way 4'),
-        ('0501UUA', 'J.O.Dorsz', 'One way 5');
+INSERT INTO BOOK(`ISBN`, `AUTHOR`, `TITLE`) VALUES ('0101UUA', 'J.O.Dorsz', 'One way');
+INSERT INTO BOOK(`ISBN`, `AUTHOR`, `TITLE`) VALUES ('0201UUA', 'J.O.Dorsz', 'One way 2');
+INSERT INTO BOOK(`ISBN`, `AUTHOR`, `TITLE`) VALUEs ('0301UUA', 'J.O.Dorsz', 'One way 3');
+INSERT INTO BOOK(`ISBN`, `AUTHOR`, `TITLE`) VALUES ('0401UUA', 'J.O.Dorsz', 'One way 4');
+INSERT INTO BOOK(`ISBN`, `AUTHOR`, `TITLE`) VALUES ('0501UUA', 'J.O.Dorsz', 'One way 5');

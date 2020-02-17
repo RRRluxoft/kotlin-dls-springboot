@@ -15,10 +15,10 @@ internal class RepositoriesTests @Autowired constructor(
 
     @Test
     fun `When findByIban then return Book`() {
-        val book = Book(iban = "0101UUATest", author = "J.O.Dorsz", title = "One way")
+        val book = Book(isbn = "0101UUATest", author = "J.O.Dorsz", title = "One way")
         entityManager.persistAndFlush(book)
 
-        val result: Book? = bookRepo.findByIban("0101UUATest")
+        val result: Book? = bookRepo.findByIsbn("0101UUATest")
         println("ALL : ${bookRepo.findAll()}")
         Assertions.assertSame(book, result, "Result is : $result")
     }

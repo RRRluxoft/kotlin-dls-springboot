@@ -6,8 +6,8 @@ import javax.persistence.Id
 
 @Entity
 data class Book(
-    var author: String = "",
-    var iban: String = "",
-    var title: String = "",
-    @Id @GeneratedValue var bookId: Long? = null
+    val author: String = "",
+    val isbn: String = "",
+    val title: String = "",
+    @Id @GeneratedValue val bookId: Long? = null
 )

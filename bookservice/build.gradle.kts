@@ -42,15 +42,17 @@ dependencies {
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
     developmentOnly("org.springframework.boot:spring-boot-devtools")
-    runtimeOnly("com.h2database:h2")
-    testImplementation ("io.kotlintest:kotlintest-runner-junit5:3.4.2")
+
     testImplementation("org.springframework.boot:spring-boot-starter-test") {
         exclude(group = "org.junit.vintage", module = "junit-vintage-engine")
     }
+    testImplementation("org.junit.jupiter:junit-jupiter-api")
+    runtimeOnly("org.junit.jupiter:junit-jupiter-engine")
+    runtimeOnly("com.h2database:h2")
 }
 
 tasks.withType < Test > {
-    useJUnitPlatform()
+    useJUnitPlatform() // Junit 5
 }
 
 tasks.withType < KotlinCompile > {
